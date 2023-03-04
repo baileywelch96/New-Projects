@@ -14,5 +14,25 @@ const closeNav = () => {
     closeNavBtn.style.display = 'none';
 }
 
-openNavBtn.addEventListener('click', openNav)
-closeNavBtn.addEventListener('click', closeNav)
+openNavBtn.addEventListener('click', openNav);
+closeNavBtn.addEventListener('click', closeNav);
+
+
+const sidebar = document.querySelector('aside');
+const showSidebarBtn = document.querySelector('#show__sidebar-btn');
+const hideSidebarBtn = document.querySelector('#hide__showbar-btn');
+
+const showSidebar = () => {
+    sidebar.style.left = '0';
+    showSidebarBtn.style.display = 'none';
+    hideSidebarBtn.style.display = 'inline-block'
+};
+
+const hideSidebar = () => {
+    sidebar.style.left = '-100%';
+    showSidebarBtn.style.display = 'inline-block';
+    hideSidebarBtn.style.display = 'none'
+}
+
+showSidebarBtn.addEventListener('click', showSidebar);
+hideSidebarBtn.addEventListener('click', hideSidebar);
