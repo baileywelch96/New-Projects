@@ -349,6 +349,24 @@ footer ul a:hover {
     color: var(--color-white);
 }
 
+.single__post {
+    margin: 6rem 0 2rem;
+}
+.single__post-container {
+    width: var(--form-width);
+    background: var(--color-gray-900);
+    padding: 1rem 2rem 3rem;
+}
+
+.single__post-container p {
+    margin-top: 1rem;
+    line-height: 1.7;
+}
+
+.single__post-thumbnail {
+    margin: 1.5rem 0 1rem;
+}
+
 /* MEDIA (MEDIUM DEVICES) */
 
 @media screen and (max-width: 1024px) {
@@ -507,5 +525,10 @@ footer ul a:hover {
 
     .search__bar-container {
         width: var(--container-width-md);
+    }
+
+    .single__post-container {
+        background-color: transparent;
+        padding: 0;
     }
 }
