@@ -521,7 +521,7 @@ input, textarea, select {
     transition: var(--transition);
 }
 
-.dashboard #hide__sidebar-btn #show__sidebar-btn {
+.dashboard button {
     display: none;
 }
 
